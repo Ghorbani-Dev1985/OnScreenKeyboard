@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AnimatedKeyboard</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="keyboardResult"></h1>
+    <div class="keyboard" id="EN">
+      <ul class="row">
+        <li class="pinky flex flex-col items-center justify-between" id="`">
+          <span>`</span><span>~</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="1">
+          <span>1</span><span>!</span>
+        </li>
+        <li class="ring flex flex-col items-center justify-between" id="2">
+          <span>2</span><span>@</span>
+        </li>
+        <li class="middle flex flex-col items-center justify-between" id="3">
+          <span>3</span><span>#</span>
+        </li>
+        <li
+          class="pointer1st flex flex-col items-center justify-between"
+          id="4"
+        >
+          <span>4</span><span>$</span>
+        </li>
+        <li
+          class="pointer2nd flex flex-col items-center justify-between"
+          id="5"
+        >
+          <span>5</span><span>%</span>
+        </li>
+        <li
+          class="pointer2nd flex flex-col items-center justify-between"
+          id="6"
+        >
+          <span>6</span><span>^</span>
+        </li>
+        <li
+          class="pointer1st flex flex-col items-center justify-between"
+          id="7"
+        >
+          <span>7</span><span>&</span>
+        </li>
+        <li class="middle flex flex-col items-center justify-between" id="8">
+          <span>8</span><span>*</span>
+        </li>
+        <li class="ring flex flex-col items-center justify-between" id="9">
+          <span>9</span><span>(</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="0">
+          <span>0</span><span>)</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="-">
+          <span>-</span><span>_</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="=">
+          <span>=</span><span>+</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="Backspace">
+          BACK
+        </li>
+      </ul>
+      <ul class="row">
+        <li class="pinky" id="Tab">TAB</li>
+        <li class="pinky" id="Q">Q</li>
+        <li class="ring" id="W">W</li>
+        <li class="middle" id="E">E</li>
+        <li class="pointer1st" id="R">R</li>
+        <li class="pointer2nd" id="T">T</li>
+        <li class="pointer2nd" id="Y">Y</li>
+        <li class="pointer1st" id="U">U</li>
+        <li class="middle" id="I">I</li>
+        <li class="ring" id="O">O</li>
+        <li class="pinky" id="P">P</li>
+        <li class="pinky flex flex-col items-center justify-between" id="[">
+          <span>[</span><span>{</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="]">
+          <span>]</span><span>}</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="\">
+          <span>\</span><span>|</span>
+        </li>
+      </ul>
+      <ul class="row">
+        <li class="pinky" id="caps">CAPS</li>
+        <li class="pinky" id="A">A</li>
+        <li class="ring" id="S">S</li>
+        <li class="middle" id="D">D</li>
+        <li class="pointer1st" id="F">F</li>
+        <li class="pointer2nd" id="G">G</li>
+        <li class="pointer2nd" id="H">H</li>
+        <li class="pointer1st" id="J">J</li>
+        <li class="middle" id="K">K</li>
+        <li class="ring" id="L">L</li>
+        <li class="pinky flex flex-col items-center justify-between" id=";">
+          <span>;</span><span>:</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="'">
+          <span>'</span><span>"</span>
+        </li>
+        <li class="pinky" id="ENTER">ENTER</li>
+      </ul>
+      <ul class="row">
+        <li class="pinky" id="ShiftRight">SHIFT</li>
+        <li class="pinky" id="Z">Z</li>
+        <li class="ring" id="X">X</li>
+        <li class="middle" id="C">C</li>
+        <li class="pointer1st" id="V">V</li>
+        <li class="pointer2nd" id="B">B</li>
+        <li class="pointer2nd" id="N">N</li>
+        <li class="pointer1st" id="M">M</li>
+        <li class="middle flex flex-col items-center justify-between" id=",">
+          <span>,</span><span> < </span>
+        </li>
+        <li class="ring flex flex-col items-center justify-between" id=".">
+          <span>.</span><span>></span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="/">
+          <span>/</span><span>?</span>
+        </li>
+        <li class="pinky" id="ShiftLeft">SHIFT</li>
+      </ul>
+    </div>
+    <div class="keyboard hidden" id="FA">
+      <ul class="row">
+        <li class="pinky flex flex-col items-center justify-between" id="Escape">
+          ESC
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="۱">
+          <span>۱</span><span>!</span>
+        </li>
+        <li class="ring flex flex-col items-center justify-between" id="۲">
+          <span>۲</span><span>٬</span>
+        </li>
+        <li class="middle flex flex-col items-center justify-between" id="۳">
+          <span>۳</span><span>٫</span>
+        </li>
+        <li
+          class="pointer1st flex flex-col items-center justify-between"
+          id="۴"
+        >
+          <span>۴</span><span>﷼</span>
+        </li>
+        <li
+          class="pointer2nd flex flex-col items-center justify-between"
+          id="۵"
+        >
+          <span>۵</span><span>٪</span>
+        </li>
+        <li
+          class="pointer2nd flex flex-col items-center justify-between"
+          id="۶"
+        >
+          <span>۶</span><span>×</span>
+        </li>
+        <li
+          class="pointer1st flex flex-col items-center justify-between"
+          id="۷"
+        >
+          <span>۷</span><span>،</span>
+        </li>
+        <li class="middle flex flex-col items-center justify-between" id="۸">
+          <span>۸</span><span>*</span>
+        </li>
+        <li class="ring flex flex-col items-center justify-between" id="۹">
+          <span>۹</span><span>)</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="۰">
+          <span>۰</span><span>(</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="-">
+          <span>-</span><span>ـ</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="=">
+          <span>=</span><span>+</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="Backspace">
+          BACK
+        </li>
+      </ul>
+      <ul class="row">
+        <li class="pinky" id="Tab">TAB</li>
+        <li class="pinky flex flex-col items-center justify-between" id="ض" ><span>ض</span><span>ْ</span></li>
+        <li class="ring flex flex-col items-center justify-between" id="ص"><span>ص</span><span>ٌ
+          </span></li>
+        <li class="middle flex flex-col items-center justify-between" id="ث">
+        <span>ث</span><span>ٍ
+          </span>
+        </li>
+        <li class="pointer1st flex flex-col items-center justify-between" id="ق">
+        <span>ق</span><span>ً          
+        </span></li>
+        <li class="pointer2nd flex flex-col items-center justify-between" id="ف">
+          <span>ف</span><span>ُ
+        </span></li>
+        <li class="pointer2nd flex flex-col items-center justify-between" id="غ">
+          <span>غ</span><span>ِ
+        </span></li>
+        <li class="pointer1st flex flex-col items-center justify-between" id="ع">
+          <span>ع</span><span>َ
+        </span></li>
+        <li class="middle flex flex-col items-center justify-between" id="ه">
+          <span>ه</span><span>ّ       
+        </span></li>
+        <li class="ring flex flex-col items-center justify-between" id="خ">
+          <span>خ</span><span>]</span></li>
+        <li class="pinky flex flex-col items-center justify-between" id="ح">
+          <span>ح</span><span>[</span></li>
+        <li class="pinky flex flex-col items-center justify-between" id="ج">
+          <span>ج</span><span>}</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="چ">
+          <span>چ</span><span>{</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="\">
+          <span>\</span><span>|</span>
+        </li>
+      </ul>
+      <ul class="row">
+        <li class="pinky flex flex-col items-center justify-between" id="caps">CAPS</li>
+        <li class="pinky flex flex-col items-center justify-between" id="ش">
+          <span>ش</span><span>ؤ</span></li>
+        <li class="ring flex flex-col items-center justify-between" id="س">
+          <span>س</span><span>ئ</span></li>
+        <li class="middle flex flex-col items-center justify-between" id="ی">
+          <span>ی</span><span>ي</span></li>
+        <li class="pointer1st flex flex-col items-center justify-between" id="ب">
+          <span>ب</span><span>إ</span></li>
+        <li class="pointer2nd flex flex-col items-center justify-between" id="ل">
+          <span>ل</span><span>أ</span></li>
+        <li class="pointer2nd flex flex-col items-center justify-between" id="ا">
+          <span>ا</span><span>آ</span></li>
+        <li class="pointer1st flex flex-col items-center justify-between" id="ت">
+          <span>ت</span><span>ة</span></li>
+        <li class="middle flex flex-col items-center justify-between" id="ن">
+          <span>ن</span><span>»</span></li>
+        <li class="ring flex flex-col items-center justify-between" id="م">
+          <span>م</span><span>«</span></li>
+        <li class="pinky flex flex-col items-center justify-between" id="ک">
+          <span>ک</span><span>:</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="گ">
+          <span>گ</span><span>؛</span>
+        </li>
+        <li class="pinky" id="ENTER">ENTER</li>
+      </ul>
+      <ul class="row">
+        <li class="pinky" id="ShiftRight">SHIFT</li>
+        <li class="pinky flex flex-col items-center justify-between" id="ظ">
+          <span>ظ</span><span>ك</span></li>
+        <li class="ring flex flex-col items-center justify-between" id="ط">
+          <span>ط</span><span>ط</span></li>
+        <li class="middle flex flex-col items-center justify-between" id="ز">
+          <span>ز</span><span>ژ</span></li>
+        <li class="pointer1st flex flex-col items-center justify-between" id="ر">
+          <span>ر</span><span>ٰ</span></li>
+        <li class="pointer2nd flex flex-col items-center justify-between" id="ذ">
+          <span>ذ</span>‌<span>‌  
+        </span></li>
+        <li class="pointer2nd flex flex-col items-center justify-between" id="د">
+          <span>د</span><span>ٔ
+        </span></li>
+        <li class="pointer1st flex flex-col items-center justify-between" id="پ">
+          <span>پ</span><span>ء</span></li>
+        <li class="middle flex flex-col items-center justify-between" id="و">
+          <span>و</span><span></span>
+        </li>
+        <li class="ring flex flex-col items-center justify-between" id=".">
+          <span>.</span><span>.</span>
+        </li>
+        <li class="pinky flex flex-col items-center justify-between" id="/">
+          <span>/</span><span>?</span>
+        </li>
+        <li class="pinky" id="ShiftLeft">SHIFT</li>
+      </ul>
+    </div>
+    <h2 class="help">برای تغییر زبان کلید Shift کیبورد خود را فشار دهید.</h2>
+    <!--Script-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
