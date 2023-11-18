@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Figma Preview
+# App Preview
 
 ![Anurag Hazra Site Preview](./Assets/Images/Screenshot.png)
 
