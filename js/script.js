@@ -8,7 +8,6 @@ $.addEventListener("keypress", (e) => {
   AppendToDom(e);
   let keypress = e.key.toUpperCase();
   let screenKeyboard = $.getElementById(keypress);
-  console.log(e.key);
   screenKeyboard.classList.add("hit");
   screenKeyboard.addEventListener("animationend", () => {
     screenKeyboard.classList.remove("hit");
@@ -29,6 +28,9 @@ $.addEventListener("keyup", (e) => {
     EN.classList.toggle("hidden");
     FA.classList.toggle("hidden");
     keyboardResult.classList.toggle('letter');
+  }
+  if(EN.classList.contains("hidden")){
+    keyboardResult.style.letterSpacing = 0 ;
   }
 });
 function AppendToDom(e) {
@@ -98,6 +100,9 @@ function AppendToDom(e) {
           keyboardResult.innerHTML += "+";
           break;
         case e.code === "Enter":
+          keyboardResult.innerHTML += `\n`;
+          break;
+          case e.code === "NumpadEnter":
           keyboardResult.innerHTML += `\n`;
           break;
         default:
@@ -203,6 +208,9 @@ function AppendToDom(e) {
           keyboardResult.innerHTML += "ك";
           break;
         case e.code === "Enter":
+          keyboardResult.innerHTML += `\n`;
+          break;
+          case e.code === "NumpadEnter":
           keyboardResult.innerHTML += `\n`;
           break;
         default:
